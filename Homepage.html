@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Époque</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="brand" href="Homepage.html" aria-label="Maison Époque home">
+                <span class="brand-title">Maison Époque</span>
+                <span class="brand-tagline">Curated Old Money Wardrobe</span>
+            </a>
+            <div class="nav-actions">
+                <div class="guest-actions" id="guestActions">
+                    <a class="btn btn-ghost" href="login.html">Login</a>
+                    <a class="btn btn-primary" href="signup.html">Sign up</a>
+                </div>
+                <div class="user-actions" id="userActions">
+                    <span class="greeting" id="greeting"></span>
+                    <button class="icon-btn" id="likeBtn" title="Likes" aria-label="Liked products">
+                        ♥
+                        <span class="badge" id="likesCount">0</span>
+                    </button>
+                    <button class="icon-btn" id="cartBtn" title="Cart" aria-label="Cart">
+                        🛍️
+                        <span class="badge" id="cartCount">0</span>
+                    </button>
+                    <div class="cart-dropdown" id="cartDropdown" role="dialog" aria-label="Cart preview"></div>
+                    <a class="btn" href="#" id="logoutBtn">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="toolbar">
+        <div class="toolbar-inner">
+            <select class="select" aria-label="Category">
+                <option value="1" selected >All Categories</option>
+                <option value="winter-tops">Winter tops</option>
+                <option value="jackets">Jackets</option>
+                <option value="summer-polos">Summer polos</option>
+                <option value="trousers">Trousers</option>
+            </select>
+            <input class="search-input" type="text" placeholder="Search Maison Époque…" aria-label="Search" />
+            <a class="btn btn-primary" href="#" role="button">Search</a>
+        </div>
+    </div>
+
+    <main class="home-main">
+        <section id="products" class="products" aria-label="Products"></section>
+    </main>
+    <script src="script_home.js"></script>
+</body>
+</html>

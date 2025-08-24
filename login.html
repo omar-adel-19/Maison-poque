@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Époque — Sign in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="brand">
+        <a class="brand-link" href="Homepage.html" aria-label="Maison Époque home">
+            <span class="brand-title">Maison Époque</span>
+            <span class="brand-tagline">Curated Old Money Wardrobe</span>
+        </a>
+    </header>
+
+    <main class="auth-wrapper">
+        <section class="auth-card" aria-labelledby="login-title">
+            <h1 id="login-title" class="auth-title">Sign in</h1>
+            <p class="auth-subtitle">Welcome back to Maison Époque</p>
+
+            <form class="auth-form" action="#" method="post" novalidate>
+                <label class="field">
+                    <span class="field-label">Email</span>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+
+                <label class="field">
+                    <span class="field-label">Password</span>
+                    <input type="password" name="password" placeholder="Your password" required minlength="6">
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="remember" value="1">
+                    <span>Remember me on this device</span>
+                </label>
+
+                <button class="btn-primary" type="submit">Continue</button>
+            </form>
+
+            <p class="auth-switch">New to Maison Époque? <a href="signup.html">Create an account</a></p>
+        </section>
+    </main>
+
+    <div class="auth-footer-space"></div>
+    <script src="script_login.js"></script>
+</body>
+</html>

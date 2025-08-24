@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Époque — Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="brand" href="Homepage.html" aria-label="Maison Époque home">
+                <span class="brand-title">Maison Époque</span>
+                <span class="brand-tagline">Curated Old Money Wardrobe</span>
+            </a>
+            <div class="nav-actions">
+                <div class="guest-actions" id="guestActions">
+                    <a class="btn btn-ghost" href="login.html">Login</a>
+                    <a class="btn btn-primary" href="signup.html">Sign up</a>
+                </div>
+                <div class="user-actions" id="userActions">
+                    <span class="greeting" id="greeting"></span>
+                    <button class="icon-btn" id="likeBtn" title="Likes" aria-label="Liked products">
+                        ♥
+                        <span class="badge" id="likesCount">0</span>
+                    </button>
+                    <button class="icon-btn" id="cartBtn" title="Cart" aria-label="Cart">
+                        🛍️
+                        <span class="badge" id="cartCount">0</span>
+                    </button>
+                    <div class="cart-dropdown" id="cartDropdown" role="dialog" aria-label="Cart preview"></div>
+                    <a class="btn" href="#" id="logoutBtn">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="home-main cart-page" id="cartPage">
+        <h1 class="auth-title" style="margin-bottom: 12px;">Your cart</h1>
+        <section class="cart-grid" id="cartGrid" aria-label="Cart items"></section>
+        <div class="cart-summary" id="cartSummary"></div>
+        <hr class="divider">
+        <h2 class="auth-title liked-heading-line" style="margin-top: 18px; margin-bottom: 12px;">Liked products</h2>
+        <section class="liked-row" id="likedGrid" aria-label="Liked products"></section>
+    </main>
+
+    <script src="script_home.js"></script>
+    <script src="script_cart.js"></script>
+</body>
+</html>
+
+

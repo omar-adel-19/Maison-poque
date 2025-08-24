@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Époque — Create account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    
+</head>
+<body>
+    <header class="brand">
+        <a class="brand-link" href="Homepage.html" aria-label="Maison Époque home">
+            <span class="brand-title">Maison Époque</span>
+            <span class="brand-tagline">Curated Old Money Wardrobe</span>
+        </a>
+    </header>
+
+    <main class="auth-wrapper">
+        <section class="auth-card" aria-labelledby="signup-title">
+            <h1 id="signup-title" class="auth-title">Create account</h1>
+            <p class="auth-subtitle">Join the Maison Époque circle</p>
+
+            <form class="auth-form" action="#" method="post" novalidate>
+                <div class="form-row">
+                    <label class="field">
+                        <span class="field-label">First name</span>
+                        <input type="text" name="firstName" placeholder="Alexandra" required>
+                    </label>
+                    <label class="field">
+                        <span class="field-label">Last name</span>
+                        <input type="text" name="lastName" placeholder="Montague" required>
+                    </label>
+                </div>
+
+                <label class="field">
+                    <span class="field-label">Email</span>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+
+                <div class="form-row">
+                    <label class="field">
+                        <span class="field-label">Password</span>
+                        <input type="password" name="password" placeholder="Create a password" required minlength="6">
+                    </label>
+                    <label class="field">
+                        <span class="field-label">Confirm password</span>
+                        <input type="password" name="confirmPassword" placeholder="Repeat password" required minlength="6">
+                    </label>
+                </div>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="terms" required>
+                    <span>I agree to the terms and wish to receive curated Maison Époque updates</span>
+                </label>
+
+                <button class="btn-primary" type="submit">Create account</button>
+            </form>
+
+            <p class="auth-switch">Already a member? <a href="login.html">Sign in</a></p>
+        </section>
+    </main>
+
+    <div class="auth-footer-space"></div>
+    <script src="script_signup.js"></script>
+</body>
+</html>
