@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Redirect to home
-        window.location.href = 'Homepage.html';
+        window.location.href = 'index.html';
     });
 });
 
